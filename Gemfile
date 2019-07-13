@@ -7,5 +7,5 @@ gem 'rspec', '~> 3.8'
 gem 'shoulda-matchers'
 
 group :test do
-    gem 'simplecov', require: false
+	gem 'simplecov', require: false
 end
