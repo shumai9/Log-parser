@@ -1,14 +1,13 @@
 require './lib/file_parser'
 require 'benchmark'
 
-
 path = "log/webserver.log"
+
 def app(path)
 	#parse and get count
 	#show visted pages in order (desc or asc)
 	#show uinique views in order
 end
-
 # The 20 is the width of the first column in the output.
 Benchmark.bm(20) do |bm|  
 	bm.report("var not created:") do 
