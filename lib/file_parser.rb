@@ -10,7 +10,7 @@ module ParseUtils
         end   
         return data
       end
-      return nil    
+      return nil
     end
   end
   class PageViewsAnalizer
