@@ -22,14 +22,6 @@ Benchmark.bm(20) do |bm|
 			sorted_views = analzed_obj.sort_page_views(visit_count),
 			unique_visits = analzed_obj.filter_unique_views(sorted_views)
 		]
-		# parsed_data = [ 
-		# 	visit_count = ParseUtils::PageViewsAnalizer.count_page_views(
-		# 		ParseUtils::FileParser.parse_file(path)
-		# 	),
-		# 	sort_visited = ParseUtils::PageViewsAnalizer.sort_page_views(visit_count),
-		# 	unique_visits = ParseUtils::PageViewsAnalizer.filter_unique_views(sort_visited)
-		# ]
-		#created method to display
 		def display_views(data_obj)
 			data_obj.map{ |k,v| puts "\r\n Visited_Page | Total_Count #{" "*20}\r\n #{k} #{" "*5}:#{" "*10}#{v}" }
 		end
